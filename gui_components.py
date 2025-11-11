@@ -308,3 +308,76 @@ class SessionsTable:
         
         tree_frame.grid_rowconfigure(0, weight=1)
         tree_frame.grid_columnconfigure(0, weight=1)
+
+
+class WeeklySummaryWindow:
+    """Window displaying weekly study summary"""
+    
+    @staticmethod
+    def create_window(sessions: list, stats: dict, parent: tk.Tk):
+        """
+        Create a window displaying weekly summary.
+        
+        Args:
+            sessions: List of weekly sessions
+            stats: Dictionary containing calculated statistics
+            parent: Parent tkinter window
+        """
+        # Create summary window
+        summary_window = tk.Toplevel(parent)
+        summary_window.title("Weekly Summary")
+        summary_window.geometry("600x500")
+        summary_window.configure(bg=Constants.WHITE)
+        
+        # Title
+        title = tk.Label(
+            summary_window,
+            text="Weekly Study Summary",
+            font=("Arial", 18, "bold"),
+            bg=Constants.WHITE,
+            fg=Constants.PRIMARY_COLOR
+        )
+        title.pack(pady=20)
+        
+        # Summary text
+        summary_frame = tk.Frame(summary_window, bg=Constants.LIGHT_GRAY, 
+                                relief=tk.RAISED, borderwidth=2)
+        summary_frame.pack(padx=30, pady=10, fill=tk.BOTH, expand=True)
+        
+        hours, minutes = TimeFormatter.format_time_detailed(stats['total_time'])
+        
+        summary_text = f"""
+        Summary for Last 7 Days
+        
+        Total Study Sessions: {stats['session_count']}
+        
+        Total Time Studied: {hours}h {minutes}min
+        
+        Average Productivity: {stats['avg_productivity']:.1f}/5
+        
+        Most Studied Subject: {stats['most_studied'][0]} ({stats['most_studied'][1]} min)
+        
+        Subjects Covered: {stats['subject_count']}
+        """
+        
+        summary_label = tk.Label(
+            summary_frame,
+            text=summary_text,
+            font=("Arial", 12),
+            bg=Constants.LIGHT_GRAY,
+            fg=Constants.DARK_GRAY,
+            justify=tk.LEFT
+        )
+        summary_label.pack(pady=20, padx=20)
+        
+        # Motivational message
+        motivation = MessageGenerator.get_random_motivation()
+        motivation_label = tk.Label(
+            summary_window,
+            text=f"{motivation}",
+            font=("Arial", 11, "italic"),
+            bg=Constants.WHITE,
+            fg=Constants.SECONDARY_COLOR,
+            wraplength=500
+        )
+        motivation_label.pack(pady=20)
