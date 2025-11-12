@@ -56,3 +56,81 @@ class Constants:
         "Knowledge is power, and you're gaining it!"
     ]
 
+
+class MessageGenerator:
+    """Generates motivational and feedback messages"""
+    
+    @staticmethod
+    def get_random_motivation() -> str:
+        """
+        Get a random motivational message.
+        
+        Returns:
+            Random motivational message
+        """
+        return random.choice(Constants.MOTIVATIONAL_MESSAGES)
+    
+    @staticmethod
+    def get_session_saved_message(duration: int, subject: str) -> str:
+        """
+        Generate a message for when a session is saved.
+        
+        Args:
+            duration: Study duration in minutes
+            subject: Subject name
+            
+        Returns:
+            Formatted success message
+        """
+        motivation = MessageGenerator.get_random_motivation()
+        return f"Successfully logged {duration} minutes of {subject}!\n\n{motivation}"
+    
+    @staticmethod
+    def get_productivity_label(score: int) -> str:
+        """
+        Get the label for a productivity score.
+        
+        Args:
+            score: Productivity score (1-5)
+            
+        Returns:
+            Descriptive label
+        """
+        return Constants.PRODUCTIVITY_LABELS.get(score, "1 - Very Low")
+
+
+class TimeFormatter:
+    """Formats time values for display"""
+    
+    @staticmethod
+    def format_minutes(total_minutes: int) -> str:
+        """
+        Format minutes into hours and minutes string.
+        
+        Args:
+            total_minutes: Total minutes
+            
+        Returns:
+            Formatted string like "2h 30min" or "45 min"
+        """
+        hours = total_minutes // 60
+        minutes = total_minutes % 60
+        
+        if hours > 0:
+            return f"{hours}h {minutes}min"
+        return f"{minutes} min"
+    
+    @staticmethod
+    def format_time_detailed(total_minutes: int) -> Tuple[int, int]:
+        """
+        Convert total minutes to hours and minutes.
+        
+        Args:
+            total_minutes: Total minutes
+            
+        Returns:
+            Tuple of (hours, minutes)
+        """
+        hours = total_minutes // 60
+        minutes = total_minutes % 60
+        return hours, minutes
