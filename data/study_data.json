@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2025-10-28 09:15:00",
+    "subject": "Math",
+    "duration": 60,
+    "productivity": 4,
+    "notes": "Worked on calculus problems"
+  },
+  {
+    "timestamp": "2025-10-29 18:30:00",
+    "subject": "Physics",
+    "duration": 45,
+    "productivity": 3,
+    "notes": "Chapter 4: kinematics"
+  },
+  {
+    "timestamp": "2025-10-30 07:00:00",
+    "subject": "Programming",
+    "duration": 90,
+    "productivity": 5,
+    "notes": "Implemented sorting algorithms"
+  },
+  {
+    "timestamp": "2025-10-31 20:15:00",
+    "subject": "English",
+    "duration": 30,
+    "productivity": 3,
+    "notes": "Read assigned novel"
+  },
+  {
+    "timestamp": "2025-11-01 14:00:00",
+    "subject": "Chemistry",
+    "duration": 50,
+    "productivity": 4,
+    "notes": "Stoichiometry practice"
+  },
+  {
+    "timestamp": "2025-11-02 10:00:00",
+    "subject": "History",
+    "duration": 40,
+    "productivity": 2,
+    "notes": "World War II timeline"
+  },
+  {
+    "timestamp": "2025-11-03 19:30:00",
+    "subject": "Biology",
+    "duration": 55,
+    "productivity": 4,
+    "notes": "Cell structure review"
+  },
+  {
+    "timestamp": "2025-11-04 08:45:00",
+    "subject": "Math",
+    "duration": 75,
+    "productivity": 5,
+    "notes": "Practice integrals"
+  },
+  {
+    "timestamp": "2025-11-05 16:20:00",
+    "subject": "Programming",
+    "duration": 120,
+    "productivity": 5,
+    "notes": "Built small project feature"
+  },
+  {
+    "timestamp": "2025-11-06 12:00:00",
+    "subject": "Economics",
+    "duration": 35,
+    "productivity": 3,
+    "notes": "Supply and demand graphs"
+  },
+  {
+    "timestamp": "2025-11-07 09:30:00",
+    "subject": "English",
+    "duration": 25,
+    "productivity": 2,
+    "notes": "Essay outline"
+  },
+  {
+    "timestamp": "2025-11-08 21:00:00",
+    "subject": "Music",
+    "duration": 45,
+    "productivity": 4,
+    "notes": "Practice scales"
+  },
+  {
+    "timestamp": "2025-11-09 15:45:00",
+    "subject": "Art",
+    "duration": 60,
+    "productivity": 4,
+    "notes": "Sketching exercises"
+  },
+  {
+    "timestamp": "2025-11-10 11:15:00",
+    "subject": "Physics",
+    "duration": 80,
+    "productivity": 5,
+    "notes": "Problem set: dynamics"
+  },
+  {
+    "timestamp": "2025-11-11 17:00:00",
+    "subject": "Math",
+    "duration": 50,
+    "productivity": 3,
+    "notes": "Linear algebra practice"
+  },
+  {
+    "timestamp": "2025-11-12 07:30:00",
+    "subject": "Programming",
+    "duration": 60,
+    "productivity": 4,
+    "notes": "Debugging and tests"
+  },
+  {
+    "timestamp": "2025-11-12 20:45:00",
+    "subject": "Chemistry",
+    "duration": 40,
+    "productivity": 3,
+    "notes": "Organic chemistry review"
+  },
+  {
+    "timestamp": "2025-11-13 13:00:00",
+    "subject": "Biology",
+    "duration": 35,
+    "productivity": 3,
+    "notes": "Genetics notes"
+  },
+  {
+    "timestamp": "2025-11-14 18:10:00",
+    "subject": "Economics",
+    "duration": 55,
+    "productivity": 4,
+    "notes": "Microeconomics problems"
+  },
+  {
+    "timestamp": "2025-11-15 09:00:00",
+    "subject": "Programming",
+    "duration": 95,
+    "productivity": 5,
+    "notes": "Refactored codebase and added tests"
+  }
+]
