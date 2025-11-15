@@ -1,0 +1,22 @@
+timestamp,subject,duration,productivity,notes
+2025-10-28 09:15:00,Math,60,4,Worked on calculus problems
+2025-10-29 18:30:00,Physics,45,3,Chapter 4: kinematics
+2025-10-30 07:00:00,Programming,90,5,Implemented sorting algorithms
+2025-10-31 20:15:00,English,30,3,Read assigned novel
+2025-11-01 14:00:00,Chemistry,50,4,Stoichiometry practice
+2025-11-02 10:00:00,History,40,2,World War II timeline
+2025-11-03 19:30:00,Biology,55,4,Cell structure review
+2025-11-04 08:45:00,Math,75,5,Practice integrals
+2025-11-05 16:20:00,Programming,120,5,Built small project feature
+2025-11-06 12:00:00,Economics,35,3,Supply and demand graphs
+2025-11-07 09:30:00,English,25,2,Essay outline
+2025-11-08 21:00:00,Music,45,4,Practice scales
+2025-11-09 15:45:00,Art,60,4,Sketching exercises
+2025-11-10 11:15:00,Physics,80,5,Problem set: dynamics
+2025-11-11 17:00:00,Math,50,3,Linear algebra practice
+2025-11-12 07:30:00,Programming,60,4,Debugging and tests
+2025-11-12 20:45:00,Chemistry,40,3,Organic chemistry review
+2025-11-13 13:00:00,Biology,35,3,Genetics notes
+2025-11-14 18:10:00,Economics,55,4,Microeconomics problems
+2025-11-15 09:00:00,Programming,95,5,Refactored codebase and added tests
+2025-11-15 14:01:28,English,100,2,This is a test
